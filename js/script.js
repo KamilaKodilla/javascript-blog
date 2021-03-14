@@ -21,7 +21,7 @@
   
     /* get 'href' attribute from the clicked link */
    
-    const articleSelector = clickedElement.getAttribute('href')
+    const articleSelector = clickedElement.getAttribute('href');
 
     console.log(articleSelector);
 
@@ -41,7 +41,6 @@
     for(let activeLink of activeLinks){
     activeLink.classList.remove('active');
     }
-  }
 
   /* lesson 6.5*/
 
@@ -65,12 +64,11 @@
 
   /* get the article id */
   
-  const articleId = clickedElement.getAttribute('id')
+  const articleId = document.getAttribute('id');
     console.log(articleId);
 
   /* find the title element */
-
-   /* get the title from the title element */
+  /* get the title from the title element */
 
   const articleTitle = article.querySelector(optTitleSelector).innerHTML;
 
@@ -93,3 +91,4 @@ generateTitleLinks();
   for(let link of links){
     link.addEventListener('click', titleClickHandler);
   }
+}
