@@ -196,13 +196,13 @@
     /* find all authors links with class active */
     const authorLinks = document.querySelectorAll('a.active[href^="#author-"]');
     /* START LOOP: for each active tag link */
-    for(let authorLink of authorsLinks){
+    for(let authorLink of authorLinks){
       /* remove class active */
       authorLink.classList.remove('active');
     /* END LOOP: for each active tag link */
     }
     /* find all author links with "href" attribute equal to the "href" constant */
-    const authorHrefs = document.querySelectorAll('a[href="' + href + '"]');
+    const authorHrefs = document.querySelectorAll('a[href^="#author-' + author + '"]');
     /* START LOOP: for each found tag link */
     for(let authorHref of authorHrefs){
       /* add class active */
